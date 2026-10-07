@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sabari Balaji C.K - Resume</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: #e9edf2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* =================================
+           SCREEN AREA
+           ================================= */
+
+        .screen {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* =================================
+           RESUME WRAPPER
+           ================================= */
+
+        .resume-wrapper {
+            position: relative;
+            width: 794px;
+            height: 1123px;
+            flex-shrink: 0;
+        }
+
+        /* =================================
+           A4 RESUME
+           ================================= */
+
+        .resume {
+            width: 794px;
+            height: 1123px;
+            padding: 42px 52px;
+
+            background: white;
+
+            color: #333;
+
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+
+            transform-origin: top left;
+        }
+
+        /* =================================
+           HEADER
+           ================================= */
+
+        .header h1 {
+            margin: 0;
+            color: #163a5f;
+            font-size: 32px;
+            letter-spacing: 0.5px;
+        }
+
+        .degree {
+            margin: 3px 0;
+            color: #1f5f8b;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .college {
+            margin: 3px 0;
+            color: #666;
+            font-size: 13px;
+        }
+
+        .contact {
+            margin: 4px 0 0 0;
+            font-size: 12px;
+            color: #333;
+        }
+
+        /* =================================
+           SECTION TITLE
+           ================================= */
+
+        .section-title {
+            color: #1f5f8b;
+            font-size: 17px;
+            margin: 13px 0 6px 0;
+            padding-bottom: 3px;
+            border-bottom: 2px solid #1f5f8b;
+        }
+
+        /* =================================
+           PROFILE
+           ================================= */
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .profile img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #e4edf4;
+            flex-shrink: 0;
+        }
+
+        .profile p {
+            margin: 0;
+            font-size: 12px;
+            line-height: 1.45;
+        }
+
+        /* =================================
+           EDUCATION
+           ================================= */
+
+        .education-title {
+            margin: 0;
+            color: #163a5f;
+            font-size: 14px;
+        }
+
+        .education-info {
+            margin: 2px 0;
+            font-size: 12px;
+        }
+
+        .education-description {
+            margin: 2px 0;
+            font-size: 11.5px;
+            line-height: 1.4;
+        }
+
+        /* =================================
+           SKILLS
+           ================================= */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 45px;
+        }
+
+        .skill-group h3 {
+            margin: 2px 0;
+            color: #163a5f;
+            font-size: 13px;
+        }
+
+        .skill-group ul {
+            margin: 0 0 2px 17px;
+            padding: 0;
+        }
+
+        .skill-group li {
+            font-size: 11.5px;
+            margin-bottom: 1px;
+        }
+
+        /* =================================
+           PROJECTS
+           ================================= */
+
+        .project {
+            margin-bottom: 5px;
+        }
+
+        .project h3 {
+            margin: 3px 0 1px 0;
+            color: #163a5f;
+            font-size: 13px;
+        }
+
+        .project p {
+            margin: 0;
+            font-size: 11.5px;
+            line-height: 1.4;
+        }
+
+        /* =================================
+           BOTTOM SECTIONS
+           ================================= */
+
+        .bottom-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+        }
+
+        .bottom-grid .section-title {
+            margin-top: 10px;
+        }
+
+        .bottom-grid ul {
+            margin: 2px 0 0 17px;
+            padding: 0;
+        }
+
+        .bottom-grid li {
+            font-size: 11.5px;
+            margin-bottom: 2px;
+        }
+
+        /* =================================
+           LANGUAGES
+           ================================= */
+
+        .languages {
+            margin: 3px 0;
+            font-size: 11.5px;
+        }
+
+        /* =================================
+           FOOTER
+           ================================= */
+
+        .footer {
+            margin-top: 9px;
+            padding-top: 6px;
+            border-top: 1px solid #d9e0e6;
+            text-align: center;
+            color: #666;
+            font-size: 10px;
+        }
+
+        /* =================================
+           PRINT
+           ================================= */
+
+        @media print {
+
+            html,
+            body {
+                overflow: visible;
+                background: white;
+            }
+
+            .screen {
+                display: block;
+                width: auto;
+                height: auto;
+            }
+
+            .resume-wrapper {
+                width: 794px;
+                height: 1123px;
+            }
+
+            .resume {
+                transform: none !important;
+                box-shadow: none;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="screen">
+
+    <div class="resume-wrapper" id="resumeWrapper">
+
+        <div class="resume" id="resume">
+
+
+            <!-- HEADER -->
+
+            <div class="header">
+
+                <h1>Sabari Balaji C.K</h1>
+
+                <p class="degree">
+                    B.Tech - Artificial Intelligence and Data Science
+                </p>
+
+                <p class="college">
+                    Rathinam Technical Campus
+                </p>
+
+                <p class="contact">
+                    Phone: 2345689635
+                    &nbsp; | &nbsp;
+                    Email: sabari55@gmail.com
+                </p>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <h2 class="section-title">Profile</h2>
+
+            <div class="profile">
+
+                <img src="Sabari.jpeg" alt="Sabari Balaji">
+
+                <p>
+                    Motivated B.Tech Artificial Intelligence and Data Science
+                    student with a strong academic record and a growing
+                    foundation in programming, web development, and software
+                    engineering.
+                </p>
+
+            </div>
+
+
+            <!-- EDUCATION -->
+
+            <h2 class="section-title">Education</h2>
+
+            <h3 class="education-title">
+                B.Tech in Artificial Intelligence and Data Science
+            </h3>
+
+            <p class="education-info">
+                <strong>Rathinam Technical Campus</strong>
+                &nbsp; | &nbsp; 2025 - 2029
+            </p>
+
+            <p class="education-description">
+                Currently pursuing a Bachelor's degree with a focus on
+                Artificial Intelligence, Data Science, Programming,
+                and Software Development.
+            </p>
+
+
+            <!-- TECHNICAL SKILLS -->
+
+            <h2 class="section-title">Technical Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-group">
+
+                    <h3>Programming</h3>
+
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <h3>Web Development</h3>
+
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <h3>Tools</h3>
+
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>VS Code</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <h3>Core Areas</h3>
+
+                    <ul>
+                        <li>Data Structures</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>AI & Data Science Fundamentals</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECTS -->
+
+            <h2 class="section-title">Projects</h2>
+
+
+            <div class="project">
+
+                <h3>
+                    1. HireWave - Premium Job Portal
+                </h3>
+
+                <p>
+                    Developed a modern job portal with candidate and recruiter
+                    workflows, job search, applications, profiles, and
+                    application status tracking using HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    2. CampusLib - Library Management System
+                </h3>
+
+                <p>
+                    Designed a web-based library management solution focused
+                    on organizing books, users, and library operations with
+                    a clean and practical interface.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>
+                    3. Resume Parser Agent
+                </h3>
+
+                <p>
+                    Planned an AI-based resume parsing solution that extracts
+                    resume information, compares it with job descriptions,
+                    and produces a structured candidate-fit report.
+                </p>
+
+            </div>
+
+
+            <!-- CERTIFICATIONS + CAREER -->
+
+            <div class="bottom-grid">
+
+                <div>
+
+                    <h2 class="section-title">
+                        Certifications & Learning
+                    </h2>
+
+                    <ul>
+
+                        <li>
+                            IBM Full Stack Software Developer - Coursera
+                        </li>
+
+                        <li>
+                            Java Programming Practice
+                        </li>
+
+                        <li>
+                            Python Programming Practice
+                        </li>
+
+                        <li>
+                            Web Development
+                        </li>
+
+                        <li>
+                            Git & GitHub
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h2 class="section-title">
+                        Career Interests
+                    </h2>
+
+                    <ul>
+
+                        <li>Artificial Intelligence</li>
+                        <li>Data Science</li>
+                        <li>Software Development</li>
+                        <li>Web Development</li>
+                        <li>Machine Learning</li>
+                        <li>Data Analytics</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- LANGUAGES -->
+
+            <h2 class="section-title">Languages</h2>
+
+            <p class="languages">
+                <strong>English</strong>
+                &nbsp; | &nbsp;
+                <strong>Tamil</strong>
+            </p>
+
+
+           
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    function fitResumeToScreen() {
+
+        const wrapper = document.getElementById("resumeWrapper");
+        const resume = document.getElementById("resume");
+
+        const resumeWidth = 794;
+        const resumeHeight = 1123;
+
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+
+        const scaleX = screenWidth / resumeWidth;
+        const scaleY = screenHeight / resumeHeight;
+
+        const scale = Math.min(scaleX, scaleY) * 0.96;
+
+        resume.style.transform = "scale(" + scale + ")";
+
+        wrapper.style.width = (resumeWidth * scale) + "px";
+        wrapper.style.height = (resumeHeight * scale) + "px";
+    }
+
+    window.addEventListener("load", fitResumeToScreen);
+
+    window.addEventListener("resize", fitResumeToScreen);
+
+</script>
+
+</body>
+</html>
